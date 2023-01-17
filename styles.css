@@ -68,6 +68,49 @@ header p {
     flex-wrap: wrap;
 }
 
+/* Kicker Action styles */
+
+.kicker-action {
+    border: 1px solid black;
+    display: flex;
+    font-size: 9px;
+    max-width: max-content;
+    gap: 3px;
+}
+
+.kick {
+    border: 1px solid black;
+    flex-basis: 22px;
+}
+
+.kick input {
+    margin-right: 5px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diamond {
+    display: flex;
+    justify-content: center;
+}
+
+.diamond-shape {
+    height: 35px;
+    width: 35px;
+    transform: rotate(45deg);
+    border: 1px solid black;
+}
+
+.kick-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Footer styles */
 
 footer {
