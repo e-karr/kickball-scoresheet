@@ -1,11 +1,24 @@
 body {
     font-family: sans-serif;
-    padding: 0;
+    padding: 30px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red;  for debugging */
+    min-height: 100vh;
 }
 
-h1{
+/* header, footer {
+    border: 1px solid red; for debugging
+} */
+
+/* Header styles */
+
+h1 {
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .header-info-container {
@@ -13,9 +26,8 @@ h1{
     justify-content: space-between;
     /* border: 1px solid red;   for debugging */
     gap: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .info-item {
@@ -42,5 +54,12 @@ h1{
 header p {
     font-weight: 700;
     font-size: 12px;
-    padding-left: 30px;
+}
+
+/* Footer styles */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
