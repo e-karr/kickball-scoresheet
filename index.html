@@ -12,29 +12,61 @@
         <h1>KVKL Official Scorecard</h1>
         <div class="header-info-container">
             <div class="info-item team-info">
-                <div>
-                    <label for="team">Team:</label><br>
-                    <label for="field">Field:</label><br>
-                    <label for="opponent">Opponent:</label>
+                <div class="game-info team">
+                    <div>
+                        <label for="team">Team:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="team" name="team">
+                    </div>
+                    <div>
+                        <input type="radio" id="home" value="Home" name="homeVisitor"><label for="home">Home</label>
+                        <input type="radio" id="visitor" value="Visitor" name="homeVisitor"><label for="visitor">Visitor</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="text" id="team" name="team">
-                    <input type="radio" id="home" value="Home" name="homeVisitor"><label for="home">Home</label>
-                    <input type="radio" id="visitor" value="Visitor" name="homeVisitor"><label for="visitor">Visitor</label><br>
-                    <input type="text" id="field" name="field"><br>
-                    <input type="text" id="opponent" name="opponent">
+                
+                <div class="game-info">
+                    <div>
+                        <label for="field">Field:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="field" name="field">
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <label for="opponent">Opponent:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="opponent" name="opponent">
+                    </div>
                 </div>
             </div>
-            <div class="info-item game-info">
-                <div>
-                    <label for="date">Date:</label><br>
-                    <label for="startTime">Start Time:</label><br>
-                    <label for="endTime">End Time:</label>
+            <div class="info-item">
+                <div class="game-info">
+                    <div>
+                        <label for="date">Date:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="date" name="date">
+                    </div>
                 </div>
-                <div>
-                    <input type="text" id="date" name="date"><br>
-                    <input type="text" id="startTime" name="startTime"><br>
-                    <input type="text" id="endTime" name="endTime"> 
+                <div class="game-info">
+                    <div>
+                        <label for="startTime">Start Time:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="startTime" name="startTime">
+                    </div>
+
+                </div>
+                <div class="game-info">
+                    <div>
+                        <label for="endTime">End Time:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="endTime" name="endTime"> 
+                    </div>
                 </div>
             </div> 
         </div>

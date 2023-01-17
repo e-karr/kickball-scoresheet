@@ -31,7 +31,6 @@ h1 {
 }
 
 .info-item {
-    display: flex;
     gap: 15px;
     margin-bottom: 5px;
     /* border: 1px solid red; for debugging */
@@ -39,14 +38,19 @@ h1 {
 
 .team-info {
     flex: 2;
+    /* border: 1px solid red; for debugging */
 }
+
+/* .team-info div {
+    border: 1px solid red;  for debugging 
+}*/
 
 .info-item div {
     white-space: nowrap;
 }
 
 .info-item input[type=text] {
-    width: 300px; 
+    width: 300px;
     border: none;
     border-bottom: 2px solid black;
 }
@@ -54,6 +58,14 @@ h1 {
 header p {
     font-weight: 700;
     font-size: 12px;
+}
+
+.game-info {
+    display: flex;
+}
+
+.team {
+    flex-wrap: wrap;
 }
 
 /* Footer styles */
