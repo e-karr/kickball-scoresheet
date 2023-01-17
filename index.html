@@ -11,17 +11,40 @@
     <header>
         <h1>KVKL Official Scorecard</h1>
         <div class="header-info-container">
-            <div class="info-item team-info">
-                <div>Team: <input type="text"> <span>(Home/Visitor)</span></div>
-                <div>Field: <input type="text"></div>
-                <div>Opponent: <input type="text"></div>
+            <div class="info-item">
+                <div>
+                    <label for="team">Team:</label>
+                    <input type="text" id="team" name="team">
+                    <input type="radio" id="home" value="Home" name="homeVisitor"><label for="home">Home</label>
+                    <input type="radio" id="visitor" value="Visitor" name="homeVisitor"><label for="visitor">Visitor</label>
+                </div>
+                <div>
+                    <label for="field">Field:</label>
+                    <input type="text" id="field" name="field">
+                </div>
+                <div>
+                    <label for="opponent">Opponent:</label>
+                    <input type="text" id="opponent" name="opponent">
+                </div>
             </div>
-            <div class="info-item game-info">
-                <div>Date: <input type="text"></div>
-                <div>Start Time: <input type="text"></div>
-                <div>End Time: <input type="text"></div>
+            <div class="info-item">
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="text" id="date" name="date">
+                </div>
+                <div>
+                    <label for="startTime">Start Time:</label>
+                    <input type="text" id="startTime" name="startTime">
+                </div>
+                <div>
+                    <label for="endTime">End Time:</label>
+                    <input type="text" id="endTime" name="endTime"> 
+                </div>
             </div>
+            
         </div>
+
+        <p>Mark Male (M) Female (F) or Non-Binary (NB) for all players and circle to denote captains.</p>
     </header>
     
 </body>
