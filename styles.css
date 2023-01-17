@@ -10,19 +10,23 @@ h1{
 
 .header-info-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* border: 1px solid red;   for debugging */
     gap: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
 }
 
 .info-item {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     margin-bottom: 5px;
-    border: 1px solid red; /* for debugging */
+    /* border: 1px solid red; for debugging */
+}
+
+.team-info {
+    flex: 2;
 }
 
 .info-item div {
@@ -30,7 +34,13 @@ h1{
 }
 
 .info-item input[type=text] {
-    /* width: 400px; */
+    width: 300px; 
     border: none;
     border-bottom: 2px solid black;
+}
+
+header p {
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 30px;
 }
