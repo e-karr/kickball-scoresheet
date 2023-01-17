@@ -56,14 +56,14 @@ header p {
     font-size: 12px;
 }
 
-.line-up-rule {
-    font-size: 10px;
-}
-
 /* Footer styles */
 
 footer {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.line-up-rule {
+    font-size: 10px;
 }
