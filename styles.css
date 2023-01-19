@@ -68,6 +68,35 @@ header p {
     flex-wrap: wrap;
 }
 
+/* Table styles */
+
+th {
+    border: 1px solid black;
+    padding: 0;
+}
+
+.empty {
+    border: none;
+}
+
+.player-info {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.inning {
+    font-size: 12px;
+    max-width: max-content;
+}
+
+.gender {
+    width: 34px;
+}
+
+td {
+    border: 1px solid black;
+}
+
 /* Kicker Action styles */
 
 .kicker-action {
