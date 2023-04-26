@@ -27,7 +27,59 @@ textarea {
 
 label[for=notes] {
     display: block;
+    margin-bottom: 3px;
 }
+
+/* Game Info Grid */
+#game-info-container {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr 1fr repeat(2, min-content) 1fr;
+
+    margin: 5px 0;
+}
+
+#date-container,
+#time-container {
+    grid-column: 5;
+}
+
+#team-name-container {
+    grid-column: span 2;
+}
+
+#opponent-container {
+    grid-column: span 3;
+}
+
+#game-info-container>div {
+    display: flex;
+    padding: 3px;
+}
+
+#gender-rules {
+    grid-row: 3;
+    grid-column: 1 / -1;
+
+    font-size: .8rem;
+}
+
+#team-name,
+#date,
+#field,
+#opponent,
+#time {
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+/* Line Up Rule */
+
+#line-up-rule {
+    font-size: .75rem;
+}
+
+/* Referee Grid */
 
 #ref-container {
     display: grid;
@@ -112,6 +164,3 @@ label[for=scorer] {
     grid-row: 5;
 }
 
-#line-up-rule {
-    font-size: .75rem;
-}
