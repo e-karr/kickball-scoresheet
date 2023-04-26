@@ -1,12 +1,112 @@
 body {
     font-family: sans-serif;
     height: 100vh;
+
+    padding: 10px;
 }
 
 h1 {
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+}
+
+textarea {
+    width: 100%;
 }
 
 label[for=notes] {
     display: block;
+}
+
+#ref-container {
+    display: grid;
+    grid-template-columns: min-content 3fr 3fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    border: 2px solid black;
+
+    margin: 5px 0;
+}
+
+#referees {
+    grid-column: 1 / span 2;
+
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    padding: 3px;
+}
+
+#ref-team {
+    grid-column: 3;
+    border-bottom: 2px solid black;
+    padding: 3px;
+}
+
+label[for=head-ref],
+label[for=first-ref],
+label[for=third-ref] {
+    grid-column: 1;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    padding: 3px;
+}
+
+label[for=scorer] {
+    grid-column: 1;
+    border-right: 2px solid black;
+    padding: 3px;
+}
+
+#head-ref,
+#first-ref,
+#third-ref,
+#scorer {
+    grid-column: 2;
+    border-right: 2px solid black;
+}
+
+#head-ref,
+#first-ref,
+#third-ref,
+#head-ref-team,
+#first-ref-team,
+#third-ref-team {
+    border-bottom: 1px solid black;
+}
+
+#head-ref-team,
+#first-ref-team,
+#third-ref-team,
+#scorer-team {
+    grid-column: 3;
+}
+
+#head-ref,
+#head-ref-team {
+    grid-row: 2;
+}
+
+#first-ref,
+#first-ref-team {
+    grid-row: 3;
+}
+
+#third-ref,
+#third-ref-team {
+    grid-row: 4;
+}
+
+#scorer,
+#scorer-team {
+    grid-row: 5;
 }
