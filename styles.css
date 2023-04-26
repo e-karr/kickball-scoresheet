@@ -76,15 +76,15 @@ label[for=notes] {
 /* Scorecard */
 #score-container {
     display: grid;
-    grid-template-columns: max-content 2fr 3fr;
-    grid-template-rows: min-content 5fr 1fr;
+    grid-template-columns: max-content 1fr 4fr;
+    grid-template-rows: min-content 5fr max-content;
     
 }
 
 #header-container {
     display: grid;
-    grid-column: 2 / span 2;
-    grid-template-columns: max-content minmax(max-content, 1fr) repeat(2, max-content) 5fr;
+    grid-column: 2;
+    grid-template-columns: max-content minmax(max-content, 1fr) repeat(2, max-content);
 
     border-top: 2px;
     border-bottom: 2px;
@@ -123,13 +123,34 @@ label[for=notes] {
 }
 
 #inning-container-column {
+    grid-column: 3;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+}
+
+#inning-container-column p {
+    border-top: 2px;
+    border-bottom: 2px;
+    border-left: 0;
+    border-right: 2px;
+    border-style: solid;
+    border-color: black;
 }
 
 #inning-container-column p,
 #linup-order-container p {
     text-align: center;
+}
+
+#runs {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+
+    justify-self: end;
+}
+
+#total-runs-container {
+    grid-column: 3;
 }
 
 /* Line Up Rule */
