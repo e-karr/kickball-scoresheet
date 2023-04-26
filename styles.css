@@ -94,12 +94,25 @@ label[for=notes] {
     border-color: black;
 }
 
-#inning-container-row {
+#linup-order-container {
     grid-row: 2;
     grid-column: 1;
 
     display: grid;
     grid-template-columns: max-content;
+
+    border-top: 2px;
+    border-bottom: 0;
+    border-left: 2px;
+    border-right: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#linup-order-container p {
+    font-size: 1.25rem;
+    padding: 5px;
+    border-bottom: 2px solid black;
 }
 
 #header-container p {
@@ -114,7 +127,8 @@ label[for=notes] {
     grid-template-columns: repeat(10, 1fr);
 }
 
-#inning-container-column p {
+#inning-container-column p,
+#linup-order-container p {
     text-align: center;
 }
 
