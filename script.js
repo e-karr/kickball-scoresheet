@@ -32,4 +32,13 @@ for (let i = 0; i < 12; i++) {
 lineupOrder.innerHTML = lineupOrderContent;
 lineupContainer.innerHTML = playerContent;
 
+let scoresheetContainer = document.getElementById('scoresheet-container');
+let scoresheetDivs = "";
 
+for (let i = 0; i < 12; i++) {
+    for (let j = 0; j < 10; j++) {
+        scoresheetDivs += '<div class=inning></div>';
+    }
+}
+
+scoresheetContainer.innerHTML = scoresheetDivs;

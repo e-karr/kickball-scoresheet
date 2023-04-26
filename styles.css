@@ -164,6 +164,17 @@ input[class=player2-name] {
     border-right: 2px solid black;
 }
 
+#scoresheet-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.inning {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
 #inning-container-column {
     grid-column: 3;
     display: grid;
