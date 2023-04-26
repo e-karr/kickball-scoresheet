@@ -6,7 +6,7 @@ body {
     padding: 10px;
 }
 
-p, h1 {
+p, h1, input[type=checkbox] {
     margin: 0;
     padding: 0;
 }
@@ -84,7 +84,7 @@ label[for=notes] {
 #header-container {
     display: grid;
     grid-column: 2;
-    grid-template-columns: max-content minmax(max-content, 1fr) repeat(2, max-content);
+    grid-template-columns: 51px 1fr 51px;
 
     border-top: 2px;
     border-bottom: 2px;
@@ -99,6 +99,10 @@ label[for=notes] {
     border-right: 2px solid black;
     font-size: .75rem;
     font-weight: 700;
+}
+
+#offense-defense {
+    display: flex;
 }
 
 #linup-order-container {
@@ -129,7 +133,7 @@ label[for=notes] {
 
 .player-container {
     display: grid;
-    grid-template-columns: min-content 2fr 1fr;
+    grid-template-columns: 53px 1fr 51px;
     grid-template-rows: 1fr 1fr;
 }
 
