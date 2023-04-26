@@ -76,33 +76,63 @@ label[for=notes] {
 /* Scorecard */
 #score-container {
     display: grid;
-    grid-template-columns: max-content 1fr 4fr;
+    grid-template-columns: repeat(5, max-content) 4fr;
     grid-template-rows: min-content 5fr max-content;
     
 }
 
-#header-container {
-    display: grid;
-    grid-column: 2;
-    grid-template-columns: 51px 1fr 51px;
-
-    border-top: 2px;
-    border-bottom: 2px;
-    border-left: 2px;
-    border-right: 0;
-    border-style: solid;
-    border-color: black;
-}
-
-#header-container p {
-    padding: 3px;
-    border-right: 2px solid black;
-    font-size: .75rem;
+#gender-col>p,
+#player-name-col>p,
+#offense-col>p {
+    font-size: .8rem;
     font-weight: 700;
+    padding: 3px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-#offense-defense {
-    display: flex;
+#gender-col>p {
+    border-left: 2px solid black;
+}
+
+#defense-col>p {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-size: .8rem;
+    font-weight: 700;
+    padding: 3px;
+}
+
+#gender-col {
+    grid-column: 2;
+    grid-row: span 2;
+
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content repeat(12, 1fr);
+}
+
+input[class=gender] {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#player-name-col {
+    grid-column: 3;
+    grid-row: span 2;
+}
+
+#offense-col {
+    grid-column: 4;
+    grid-row: span 2;
+}
+
+#defense-col {
+    grid-column: 5;
+    grid-row: span 2;
+
+    border-right: 2px solid black;
 }
 
 #linup-order-container {
@@ -112,26 +142,20 @@ label[for=notes] {
     display: grid;
     grid-template-columns: max-content;
 
-    border-top: 2px;
+    border-top: 2px solid black;
     border-bottom: 0;
-    border-left: 2px;
-    border-right: 2px;
-    border-style: solid;
-    border-color: black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 #linup-order-container p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 5px;
     border-bottom: 2px solid black;
+    font-weight: 700;
 }
 
-#line-up-container {
-    display: grid;
-    grid-template-columns: max-content;
-}
-
-.player-container {
+/* .player-container {
     display: grid;
     grid-template-columns: 53px 1fr 51px;
     grid-template-rows: 1fr 1fr;
@@ -166,9 +190,11 @@ input[class=player2-name] {
     grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
-}
+} */
 
 #scoresheet-container {
+    grid-column: 6;
+    grid-row: 2;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -180,18 +206,19 @@ input[class=player2-name] {
 }
 
 #inning-container-column {
-    grid-column: 3;
+    grid-column: 6;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
 #inning-container-column p {
-    border-top: 2px;
-    border-bottom: 2px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     border-left: 0;
-    border-right: 2px;
-    border-style: solid;
-    border-color: black;
+    border-right: 2px solid black;
+    padding: 3px;
+    font-size: .8rem;
+    font-weight: 700;
 }
 
 #inning-container-column p,
@@ -201,7 +228,7 @@ input[class=player2-name] {
 
 #runs {
     grid-row: 3;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 5;
 
     justify-self: end;
 }
