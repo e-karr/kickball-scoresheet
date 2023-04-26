@@ -39,8 +39,13 @@ label[for=notes] {
     margin: 5px 0;
 }
 
+#game-info-container label {
+    min-width: max-content;
+    margin-right: 3px;
+}
+
 #date-container,
-#time-container {
+#start-time-container {
     grid-column: 5;
 }
 
@@ -59,18 +64,26 @@ label[for=notes] {
 
 #gender-rules {
     grid-row: 3;
-    grid-column: 1 / -1;
+    grid-column: 1 / -2;
 
     font-size: .8rem;
+
+    align-self: end;
 }
 
 #team-name,
 #date,
 #field,
 #opponent,
-#time {
+#start-time,
+#end-time {
     border-bottom: 2px solid black;
     width: 100%;
+}
+
+/* Scorecard */
+#score-container {
+
 }
 
 /* Line Up Rule */
