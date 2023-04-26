@@ -10,20 +10,22 @@ inningContainerColumn.innerHTML = inningColumnContent;
 
 let lineupOrder = document.getElementById("linup-order-container");
 let genderColumn = document.getElementById('gender-col');
+let playerNameColumn = document.getElementById('player-name-col');
 
 let lineupOrderContent = "";
 let playerContent = "";
 let genderContent = "";
+let playerNameContent = "";
 
 for (let i = 0; i < 12; i++) {
     lineupOrderContent += `<p>${i+1}</p>`;
 
-    genderContent += '<input type="text" class="gender" name="gender" placeholder=M/F/NB>'
+    genderContent += '<input type="text" class="gender" name="gender">';
 
-    // playerContent += `<div class="player-container">
-    //                     <input type="text" class="gender" name="gender">
-    //                     <input type="text" class="player-name" name="player-name">
-    //                     <input type="text" class="player2-name" name="player2-name">
+    playerNameContent += `<input type="text" class="player-name" name="player-name">
+    <input type="text" class="player2-name" name="player2-name">`
+
+    
     //                     <div class="of-de">
     //                         <input type="checkbox">
     //                         <input type="checkbox">
@@ -36,6 +38,8 @@ for (let i = 0; i < 12; i++) {
 lineupOrder.innerHTML = lineupOrderContent;
 
 genderColumn.innerHTML += genderContent;
+
+playerNameColumn.innerHTML += playerNameContent;
 
 let scoresheetContainer = document.getElementById('scoresheet-container');
 let scoresheetDivs = "";
