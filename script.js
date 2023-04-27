@@ -35,7 +35,7 @@ for (let i = 0; i < 12; i++) {
     //                 </div>`;
 }
 
-lineupOrder.innerHTML = lineupOrderContent;
+lineupOrder.innerHTML += lineupOrderContent;
 
 genderColumn.innerHTML += genderContent;
 
