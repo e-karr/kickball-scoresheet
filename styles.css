@@ -81,6 +81,11 @@ label[for=notes] {
     
 }
 
+#empty {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
 #gender-col>p,
 #player-name-col>p,
 #offense-col>p {
@@ -90,10 +95,6 @@ label[for=notes] {
     border-top: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-}
-
-#gender-col>p {
-    border-left: 2px solid black;
 }
 
 #defense-col>p {
@@ -109,13 +110,15 @@ label[for=notes] {
     grid-row: span 2;
 
     display: grid;
-    grid-template-columns: 56px;
+    grid-template-columns: 52px;
     grid-template-rows: max-content repeat(12, 1fr);
 }
 
 input[class=gender] {
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+    /* font-size: .8rem; */
+    padding-left: 20px;
 }
 
 #player-name-col {
@@ -128,14 +131,18 @@ input[class=gender] {
 }
 
 input[class=player-name] {
+    font-size: .8rem;
     border-bottom: 1px solid black;
     border-right: 2px solid black;
+    padding-left: 5px;
 }
 
 input[class=player2-name] {
+    font-size: .8rem;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     background-color: lightgrey;
+    padding-left: 5px;
 }
 
 #offense-col {
@@ -242,8 +249,11 @@ input[class=player2-name] {
 #runs {
     grid-row: 3;
     grid-column: 1 / span 5;
-
+    padding: 3px;
     justify-self: end;
+    border-right: 2px solid black;
+    font-size: .8rem;
+    font-weight: 700;
 }
 
 #total-runs-container {
