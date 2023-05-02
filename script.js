@@ -25,8 +25,10 @@ for (let i = 0; i < 12; i++) {
 
     genderContent += '<input type="text" class="gender" name="gender">';
 
-    playerNameContent += `<input type="text" class="player-name" name="player-name">
-                        <input type="text" class="player2-name" name="player2-name">`;
+    playerNameContent += `<div class=player-names-container>
+                            <input type="text" class="player-name" name="player-name">
+                            <input type="text" class="player2-name" name="player2-name">
+                        </div>`;
 
     playerCheckContent += `<div class=player-check>
                                 <input type=checkbox>
@@ -34,15 +36,6 @@ for (let i = 0; i < 12; i++) {
                             <div class=player-check>
                                 <input type=checkbox>
                             </div>`;
-
-    
-    //                     <div class="of-de">
-    //                         <input type="checkbox">
-    //                         <input type="checkbox">
-    //                         <input type="checkbox">
-    //                         <input type="checkbox">
-    //                     </div>
-    //                 </div>`;
 }
 
 lineupOrder.innerHTML += lineupOrderContent;
