@@ -78,7 +78,6 @@ label[for=notes] {
     display: grid;
     grid-template-columns: max-content max-content max-content max-content max-content 4fr;
     grid-template-rows: min-content 5fr max-content;
-    
 }
 
 #empty {
@@ -88,7 +87,8 @@ label[for=notes] {
 
 #gender-col>p,
 #player-name-col>p,
-#offense-col>p {
+#offense-col>p,
+#defense-col>p {
     font-size: .8rem;
     font-weight: 700;
     padding: 3px;
@@ -97,12 +97,11 @@ label[for=notes] {
     border-bottom: 2px solid black;
 }
 
-#defense-col>p {
+.player-check {
+    border-right: 2px solid black;
     border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    font-size: .8rem;
-    font-weight: 700;
-    padding: 3px;
+
+    text-align: center;
 }
 
 #gender-col {
@@ -130,6 +129,13 @@ input[class=gender] {
     grid-template-rows: max-content repeat(12, 1fr);
 }
 
+#offense-col,
+#defense-col {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content repeat(24, 1fr);
+}
+
 input[class=player-name] {
     font-size: .8rem;
     border-bottom: 1px solid black;
@@ -153,8 +159,6 @@ input[class=player2-name] {
 #defense-col {
     grid-column: 5;
     grid-row: span 2;
-
-    border-right: 2px solid black;
 }
 
 #linup-order-container {
