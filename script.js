@@ -56,7 +56,33 @@ let scoresheetDivs = "";
 
 for (let i = 0; i < 12; i++) {
     for (let j = 0; j < 10; j++) {
-        scoresheetDivs += '<div class=inning></div>';
+        scoresheetDivs += `<div class=inning>
+                                <div class="fouls">
+                                    <div class="fouls-checkboxes">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <p>FOULS</p>
+                                </div>
+                                <div class="base-path"></div>
+                                <div class="run">
+                                    <p>1</p>
+                                    <p>2</p>
+                                    <p>3</p>
+                                    <p>HR</p>
+                                </div>
+                                <div class="rki">
+                                    <p>RKI</p>
+                                    <div class="rki-checkboxes">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                            </div>`;
     }
 }
 

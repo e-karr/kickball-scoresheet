@@ -194,6 +194,52 @@ input[class=player2-name] {
 .inning {
     border-bottom: 2px solid black;
     border-right: 2px solid black;
+
+    display: grid;
+    grid-template-columns: minmax(max-content, 2fr) 1fr;
+    grid-template-rows: max-content 1fr max-content;
+
+    font-size: .55rem;
+    column-gap: 10px;
+}
+
+.fouls {
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.rki {
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+.base-path {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    place-self: end;
+
+}
+
+.run {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-left: 1px solid black;
+}
+
+.run>p {
+    padding: 2px;
+}
+
+.run>p:first-child, 
+.run>p:nth-child(2), 
+.run>p:nth-child(3) {
+    border-bottom: 1px solid black;
 }
 
 #inning-container-column,
