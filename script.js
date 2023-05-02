@@ -51,3 +51,11 @@ for (let i = 0; i < 12; i++) {
 }
 
 scoresheetContainer.innerHTML = scoresheetDivs;
+
+let refInputIds = ['head-ref', 'head-ref-initial', 'head-ref-team', 'first-ref', 'first-ref-initial', 'first-ref-team', 'third-ref', 'third-ref-initial', 'third-ref-team', 'scorer', 'scorer-initial', 'scorer-team'];
+
+let refContainer = document.getElementById('ref-container');
+
+for (let i = 0; i < refInputIds.length; i++) {
+    refContainer.innerHTML += `<input type=text id=${refInputIds[i]}>`;
+}
