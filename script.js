@@ -1,12 +1,19 @@
 let inningContainerColumn = document.getElementById("inning-container-column");
+let totalRunsContainer = document.getElementById('total-runs-container');
 
 let inningColumnContent = "";
+let totalRunsContent = "";
 
 for (let i = 0; i < 10; i++) {
     inningColumnContent += `<p>${i+1}</p>`;
+    totalRunsContent += `<div class="scorekeeping">
+                            <input type="text" class="inning-score">
+                            <input type="text" class="total-score">
+                        </div>`;
 }
 
 inningContainerColumn.innerHTML = inningColumnContent;
+totalRunsContainer.innerHTML = totalRunsContent;
 
 let lineupOrder = document.getElementById("linup-order-container");
 let genderColumn = document.getElementById('gender-col');
